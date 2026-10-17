@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GoalFlow</title>
+  <link rel="stylesheet" href="02-style.css">
+  <script src="03-app.js" defer></script>
+</head>
+<body>
+  <header class="app-header">
+    <a class="brand" href="#goal" aria-label="GoalFlow home">GoalFlow</a>
+    <nav aria-label="Main navigation">
+      <button class="nav-btn active" type="button" data-page="goal" aria-controls="goal-page" aria-current="page">Goal</button>
+      <button class="nav-btn" type="button" data-page="plan" aria-controls="plan-page">Plan</button>
+      <button class="nav-btn" type="button" data-page="focus" aria-controls="focus-page">Focus</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="goal-page" class="page" aria-labelledby="goal-title">
+      <div class="goal-header">
+        <p class="eyebrow">START WITH A CLEAR DIRECTION</p>
+        <h1 id="goal-title">What do you want to achieve?</h1>
+       <p class="page-description">
+        Set one meaningful goal. You can break it into small steps next.
+      </p>
+      </div>
+
+      <div class="content-card module-card">
+        <label for="goal-input-field">Your goal</label>
+        <div class="goal-input">
+          <input id="goal-input-field" type="text" class="goal-input-field" placeholder="e.g. Pass CET-6" autocomplete="off">
+          <button class="add-goal-btn primary" type="button">Add Goal</button>
+        </div>
+        <p class="input-hint">Keep it specific and achievable.</p>
+        <p class="input-hint goal-message" role="status" aria-live="polite"></p>
+      </div>
+
+      <div class="goal-list">
+        <h2>Your goals</h2>
+        <p class="empty-text">Your goals will appear here. Add one to get started.</p>
+      </div>
+    </section>
+
+    <section id="plan-page" class="page" aria-labelledby="plan-title" hidden>
+  <div class="plan-intro">
+    <p class="eyebrow">TURN YOUR GOAL INTO ACTION</p>
+    <h1 id="plan-title">Plan your tasks</h1>
+    <p class="page-description">
+      Break your goal into small, actionable steps.
+    </p>
+  </div>
+
+ <div class="current-goal module-card">
+    <p class="section-label">Current goal</p>
+    <p class="goal-placeholder">No goal selected</p>
+  </div>
+
+  <div class="task-actions">
+    <button class="generate-btn primary" type="button">
+      Generate Tasks
+    </button>
+  </div>
+
+  <div class="task-section">
+    <div class="task-section-header">
+      <h2>Your tasks</h2>
+      <span class="task-count">0 tasks</span>
+    </div>
+
+    <ul class="task-list">
+      <li class="task-item">
+        <span class="task-number">1</span>
+        <div class="task-content">
+          <p class="task-title">No tasks yet</p>
+          <p class="task-description">
+            Generate tasks from your current goal.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section id="focus-page" class="page" aria-labelledby="focus-title" hidden>
+  <div class="focus-intro">
+    <p class="eyebrow">MAKE TODAY COUNT</p>
+    <h1 id="focus-title">Today's Focus</h1>
+    <p class="page-description">
+      Small steps move you closer to your goal.
+    </p>
+  </div>
+
+<div class="today-section module-card">
+  <div class="today-header">
+    <h2>Today's tasks</h2>
+    <span class="today-count">0 tasks</span>
+  </div>
+
+  <ul class="focus-list">
+    <li class="empty-text">No tasks for today</li>
+  </ul>
+</div>
+
+  <div class="progress module-card">
+  <p>Today's progress <span class="progress-value">0%</span></p>
+  <div class="progress-track" role="progressbar" aria-label="Today's task completion" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+    <div class="progress-fill"></div>
+  </div>
+</div>
+
+<div class="motivation module-card">
+  <p>Stay focused. You can do it.</p>
+</div>
+</section>
+  </main>
+</body>
+</html>
