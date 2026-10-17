@@ -13,7 +13,7 @@ GoalFlow is a small, browser-based productivity prototype for turning one person
 ## Run it
 
 1. Download or clone this project folder.
-2. Open `01-index.html` in a modern browser. No install command or server is required.
+2. Open `index.html` in a modern browser. No install command or server is required.
 3. Type a goal such as “Pass CET-6” and select **Add Goal**.
 4. Open **Plan** and select **Generate Tasks**. The keyword examples cover study/exams, reading, projects, and a general goal template.
 5. Open **Focus**, check one or more tasks, and watch the completion count and progress bar change.
@@ -27,10 +27,10 @@ The app has three static HTML sections. JavaScript switches between them, render
 
 ## Project files
 
-- `01-index.html` — page structure and accessible controls.
-- `02-style.css` — visual design and responsive layout.
-- `03-app.js` — navigation, local storage, task templates, and progress updates.
-- `04-README.md` — project overview and usage instructions.
+- `index.html` — page structure and accessible controls.
+- `style.css` — visual design and responsive layout.
+- `app.js` — navigation, local storage, task templates, and progress updates.
+- `README.md` — project overview and usage instructions.
 
 ## Current scope
 
